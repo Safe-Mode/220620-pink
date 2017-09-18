@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Дмитриев](https://up.htmlacademy.ru/adaptive/12/user/220620).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ахметвалиев](https://htmlacademy.ru/profile/id530961).
 
 ---
 

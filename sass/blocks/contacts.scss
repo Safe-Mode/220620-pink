@@ -1,0 +1,38 @@
+.contacts {
+  @include container;
+
+  color: $color-second;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-main;
+  font-weight: 300;
+
+  &__title {
+    color: inherit;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: $font-main;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $color-prime;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-main;
+    font-weight: 300;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+  }
+
+  &__map {
+    background: $color-bg-even url("../img/bg-map-mobile@1x.png") no-repeat;
+  }
+}

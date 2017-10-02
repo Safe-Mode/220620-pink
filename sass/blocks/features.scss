@@ -1,0 +1,21 @@
+.features {
+  color: $color-second;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $font-main;
+  font-weight: 400;
+
+  background: $color-bg-even url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $font-main;
+    font-weight: 700;
+  }
+}

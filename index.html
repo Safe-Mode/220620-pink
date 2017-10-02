@@ -2,37 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">Pink</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" >Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photos.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">Pink</a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" >Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photos.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Pink</h1>
 
-      <section class="application">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a href="#" class="application__download">Скачать приложение</a>
-        <div class="application__vendors">
-          <ul class="application__list">
-            <li class="application__item"><span class="visually-hidden">Apple</span></li>
-            <li class="application__item"><span class="visually-hidden">Android</span></li>
-            <li class="application__item"><span class="visually-hidden">Windows</span></li>
-          </ul>
-          <p class="application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <section class="banner banner--index">
+        <div class="banner__wrapper">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <a href="#" class="banner__download">Скачать приложение</a>
+          <div class="banner__vendors">
+            <ul class="banner__list">
+              <li class="banner__item"><span class="visually-hidden">Apple</span></li>
+              <li class="banner__item"><span class="visually-hidden">Android</span></li>
+              <li class="banner__item"><span class="visually-hidden">Windows</span></li>
+            </ul>
+            <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
 
@@ -42,21 +48,23 @@
       </div>
 
       <section class="features">
-        <h2 class="visually-hidden">Преимущества Pink</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3> <!--Если заголовок блока h2 не будет спрятан, какой у него будет класс-->
-            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Преимущества Pink</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3> <!--Если заголовок блока h2 не будет спрятан, какой у него будет класс-->
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="reviews">
@@ -65,15 +73,15 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__title">Николай Петров</cite>
-              <p class="reviews__text"></p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__title"></cite>
-              <p class="reviews__text"></p>
+              <cite class="reviews__title">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__title"></cite>
-              <p class="reviews__text"></p>
+              <cite class="reviews__title">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
@@ -148,12 +156,9 @@
             <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
+        <div class="contacts__map"></div>
       </section>
     </main>
-
-    <footer class="page-footer">
-      <div class="map"></div>
-    </footer>
 
   </body>
 </html>

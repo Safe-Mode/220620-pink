@@ -1,0 +1,31 @@
+.banner {
+  color: #ffffff;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 24px;
+
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  &--index {
+    background-image:
+      url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+  }
+
+  &__wrapper {
+    @include container;
+  }
+
+  &__download {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: inherit;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,12 @@
+.main-nav {
+
+  &__link {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

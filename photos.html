@@ -9,21 +9,28 @@
   </head>
   <body>
 
-    <header class="page-header page-header--inner">
-      <a class="page-header__logo">Pink</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item main-nav__item--current"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">html academy</a></li>
-        </ul>
-      </nav>
-      <h1 class="page-header__title page-title">Фотографии пользователей</h1>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">Pink</a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
+      <section class="banner">
+        <div class="banner__wrapper">
+          <h1 class="banner__title page-title">Фотографии пользователей</h1>
+        </div>
+      </section>
+
       <div class="intro">
         <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
         <p class="intro__text">Видите, как не хватает ваших?</p>

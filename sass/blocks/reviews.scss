@@ -1,18 +1,34 @@
 .reviews {
   @include container;
 
+  padding-top: 45px;
+  padding-bottom: 115px;
+
+  text-align: center;
   color: $color-second;
   font-size: $fz-main;
   line-height: $lh-main;
   font-family: $font-main;
   font-weight: 400;
+}
 
-  &__title {
-    color: #000000;
-    font-size: 18px;
-    line-height: $lh-main;
-    font-family: $font-main;
-    font-weight: 700;
-    font-style: normal;
-  }
+.reviews__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+
+  color: #000000;
+  font-size: 18px;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
 }

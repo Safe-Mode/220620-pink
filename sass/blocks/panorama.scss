@@ -1,12 +1,11 @@
-.posts {
+.panorama {
   @include prime-text;
 
   &__wrapper {
     @include container;
   }
 
-  &__item {
-    margin: 0;
+  &__desc {
     background-color: $color-bg-even;
   }
 

@@ -1,0 +1,7 @@
+.intro {
+  @include prime-text;
+
+  &__wrapper {
+    @include container;
+  }
+}

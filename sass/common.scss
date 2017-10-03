@@ -31,6 +31,14 @@
   width: 280px;
 }
 
+@mixin prime-text {
+  color: $color-second;
+  font-size: $fz-main;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 400;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -49,4 +57,9 @@
 
 body {
   min-width: 320px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

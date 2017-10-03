@@ -1,6 +1,23 @@
 .main-nav {
 
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 -20px;
+
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000001;
+  }
+
   &__link {
+    display: block;
+    padding: 15px;
+
     font-family: $font-main;
     font-weight: 700;
     font-size: 18px;
@@ -8,5 +25,6 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
+    text-align: center;
   }
 }

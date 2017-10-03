@@ -1,0 +1,7 @@
+.page-footer {
+  @include prime-text;
+
+  &__wrapper {
+    @include container;
+  }
+}

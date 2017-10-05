@@ -13,4 +13,11 @@
   border: none;
   outline: none;
   background-color: transparent;
+
+  &--submit {
+    padding: 15px;
+    width: 100%;
+
+    background-color: #2aab6d;
+  }
 }

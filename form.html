@@ -55,32 +55,34 @@
           </fieldset>
           <fieldset class="form__section form__section--even">
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="shark">Сделал селфи с акулой</label>
-              <input type="checkbox" id="shark" checked>
-            </p>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="beach">Обгорел на пляже</label>
-              <input type="checkbox" id="beach" checked>
-            </p>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="chack-norris">Видел Чака Норриса</label>
-              <input type="checkbox" id="chack-norris">
-            </p>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="gifts">Накупил сувениров</label>
-              <input type="checkbox" id="gifts">
-            </p>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="tower">Удержал башню</label>
-              <input type="checkbox" id="tower" checked>
-            </p>
-            <p class="form__check">
-              <label class="form__checkbox-indicator" for="hotel">Разгромил отель</label>
-              <input type="checkbox" id="hotel">
-            </p>
+            <div class="form__section-wrapper">
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="shark">Сделал селфи с акулой</label>
+                <input type="checkbox" id="shark" checked>
+              </p>
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="beach">Обгорел на пляже</label>
+                <input type="checkbox" id="beach" checked>
+              </p>
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="chack-norris">Видел Чака Норриса</label>
+                <input type="checkbox" id="chack-norris">
+              </p>
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="gifts">Накупил сувениров</label>
+                <input type="checkbox" id="gifts">
+              </p>
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="tower">Удержал башню</label>
+                <input type="checkbox" id="tower" checked>
+              </p>
+              <p class="form__check">
+                <label class="form__checkbox-indicator" for="hotel">Разгромил отель</label>
+                <input type="checkbox" id="hotel">
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--no-legend">
             <p class="form__field">
               <label class="form__label" for="phone">Номер телефона</label>
               <input class="form__input" type="tel" id="phone">
@@ -111,9 +113,11 @@
               <textarea class="form__text" name="emoji" cols="25" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <button class="button">Отправить форму</button>
+          <p class="form__button">
+            <button class="btn btn--submit" type="submit">Отправить форму</button>
+          </p>
           <small class="form__legend">
-            <sup>*</sup> — обязательные поля
+            <sup class="form__index form__index--sup">*</sup> — обязательные поля
           </small>
         </div>
       </form>
@@ -122,9 +126,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
-          <svg>
-            <use xlink:href="#"></use>
-          </svg>
+          <img src="http://via.placeholder.com/147x40" alt="">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">

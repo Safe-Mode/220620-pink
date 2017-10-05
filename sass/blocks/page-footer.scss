@@ -1,11 +1,21 @@
 .page-footer {
+  padding: 40px 0;
+  
   color: $color-second;
   font-size: $fz-main;
   line-height: 18px;
   font-family: $font-main;
   font-weight: 400;
+}
 
-  &__wrapper {
-    @include container;
-  }
+.page-footer__wrapper {
+  @include container;
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
 }

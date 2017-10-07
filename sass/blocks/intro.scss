@@ -1,0 +1,16 @@
+.intro {
+  @include prime-text;
+
+  padding-top: 50px;
+  padding-bottom: 55px;
+
+  text-align: center;
+}
+
+.intro__wrapper {
+  @include container;
+}
+
+.intro__text {
+  margin: 0;
+}

@@ -1,0 +1,55 @@
+.posts {
+  @include prime-text;
+
+  line-height: 24px;
+}
+
+.posts__wrapper {
+  @include container;
+}
+
+.posts__item {
+  margin: 0;
+  margin-bottom: 20px;
+
+  background-color: $color-bg-even;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.posts__image {
+  margin: 0;
+}
+
+.posts__desc {
+  padding: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.posts__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.posts__time {
+  font-size: 12px;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.posts__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.posts__like {
+  margin: 0;
+
+  color: $color-prime;
+  text-transform: uppercase;
+}

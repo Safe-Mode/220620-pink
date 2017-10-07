@@ -1,0 +1,70 @@
+.rates {
+  padding-top: 65px;
+  padding-bottom: 100px;
+
+  color: $color-second;
+  font-size: $fz-main;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: $color-bg-even;
+}
+
+.rates__wrapper {
+  @include container;
+}
+
+.rates__content {
+  width: 300%;
+
+  transform: translate((-100%) / 3);
+}
+
+.rates__table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.rates__header {
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  color: #ffffff;
+  line-height: $lh-main;
+  font-family: $font-main;
+  text-transform: uppercase;
+
+  background-color: $color-second;
+  border: 1px solid #e5e5e5;
+}
+
+.rates__option {
+  padding: 15px 20px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.rates__title {
+  display: block;
+  margin-bottom: 5px;
+
+  color: inherit;
+  font-size: 18px;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: inherit;
+}
+
+.rates__price {
+  display: block;
+
+  color: inherit;
+  font-size: 24px;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: inherit;
+}

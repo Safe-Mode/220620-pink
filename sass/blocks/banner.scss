@@ -1,0 +1,62 @@
+.banner {
+  color: #ffffff;
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: $fz-main;
+  line-height: 24px;
+
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &--index {
+    padding-top: 480px;
+    padding-bottom: 30px;
+
+    background-image:
+      url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position:
+      left 176px,
+      center top;
+  }
+}
+
+.banner__wrapper {
+  @include container;
+}
+
+.banner__download {
+  margin: 0;
+
+  text-align: center;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner__download-btn {
+  padding: 15px 30px;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.banner__vendors {
+  padding: 0 25px;
+}
+
+.banner__list {
+  margin: 0;
+  padding: 30px 0;
+
+  list-style: none;
+}
+
+.banner__text {
+  margin: 0;
+}

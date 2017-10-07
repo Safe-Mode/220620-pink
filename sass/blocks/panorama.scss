@@ -1,0 +1,46 @@
+.panorama {
+  @include prime-text;
+
+  margin-bottom: 20px;
+
+  line-height: 24px;
+}
+
+.panorama__wrapper {
+  @include container;
+}
+
+.panorama__image {
+  margin: 0;
+}
+
+.panorama__desc {
+  padding: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  background-color: $color-bg-even;
+}
+
+.panorama__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.panorama__time {
+  font-size: 12px;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.panorama__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.panorama__like {
+  color: $color-prime;
+  text-transform: uppercase;
+}

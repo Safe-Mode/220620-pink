@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  &--submit {
+    padding: 15px;
+    width: 100%;
+
+    background-color: #2aab6d;
+  }
+}

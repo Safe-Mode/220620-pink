@@ -1,0 +1,24 @@
+.promo {
+  @include container;
+
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  text-align: center;
+  color: $color-second;
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: $lh-main;
+
+  background-color: #ffffff;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

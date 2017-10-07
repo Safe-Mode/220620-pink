@@ -1,0 +1,142 @@
+.form {
+  @include prime-text;
+
+  overflow: hidden;
+}
+
+.form__wrapper {
+  @include container;
+}
+
+.form__section {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+
+  border: none;
+
+  &--no-legend {
+    padding-top: 30px;
+  }
+
+  &--even {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      right: -9999px;
+      bottom: 0;
+      z-index: -1;
+
+      height: 100%;
+      background-color: $color-bg-even;
+    }
+  }
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.form__title {
+  margin-bottom: 40px;
+  padding-top: 40px;
+
+  color: $color-prime;
+  font-size: $fz-main;
+  line-height: 18px;
+  font-family: $font-main;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__field {
+  margin: 0;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__check {
+  @include prime-text;
+
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  display: block;
+  padding-left: 20px;
+
+  color: $color-prime;
+  text-transform: uppercase;
+}
+
+.form__input {
+  @include input;
+
+  padding: 15px 20px;
+
+  color: $color-second;
+  font-size: 18px;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 400;
+
+  border: 2px solid $color-field-border;
+}
+
+.form__text {
+  @include input;
+
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  height: 200px;
+
+  color: $color-second;
+  font-size: 18px;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 400;
+
+  resize: none;
+  border: 2px solid $color-field-border;
+}
+
+.form__button {
+  @include prime-text;
+
+  margin: 0;
+  margin-bottom: 35px;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__legend {
+  @include prime-text;
+
+  display: block;
+  margin-bottom: 15px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__index {
+  color: $color-prime;
+}

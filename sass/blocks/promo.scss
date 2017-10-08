@@ -44,5 +44,9 @@
     @media (min-width: $tablet-width) {
       width: 340px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 420px;
+    }
   }
 }

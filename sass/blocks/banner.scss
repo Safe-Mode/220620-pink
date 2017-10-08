@@ -27,11 +27,16 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 90px;
-      padding-bottom: 120px;
+      padding-bottom: 110px;
 
       background-position:
         right 176px,
         center top;
+    }
+
+    @media (min-width: $desctop-width) {
+      padding-top: 220px;
+      padding-bottom: 120px;
     }
   }
 }
@@ -58,12 +63,18 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 0 55px;
-    width: 190px;
 
     text-align: center;
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0 35px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -77,10 +88,14 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+
+  @media (min-width: $desctop-width) {
+    font-size: 21px;
+  }
 }
 
 .banner__download-btn {
-  padding: 15px 30px;
+  padding: 15px 25px;
   width: 100%;
 
   border: 3px solid #ffffff;

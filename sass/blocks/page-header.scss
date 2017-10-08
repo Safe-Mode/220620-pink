@@ -1,5 +1,11 @@
 .page-header {
   background-color: $color-second;
+
+  @media (min-width: $desctop-width) {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__wrapper {
@@ -8,8 +14,6 @@
   @media (min-width: $desctop-width) {
     @include columns;
 
-    position: fixed;
     align-items: baseline;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 }

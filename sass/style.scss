@@ -1,6 +1,7 @@
 @import "normalize.scss";
 @import "variables.scss";
-@import "common.scss";
+@import "scaffolding.scss";
+@import "mixins.scss";
 
 @import "blocks/btn.scss";
 @import "./blocks/slider.scss";

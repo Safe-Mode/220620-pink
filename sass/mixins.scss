@@ -1,0 +1,40 @@
+@mixin container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 940px;
+  }
+}
+
+@mixin prime-text {
+  color: $color-second;
+  font-size: $fz-main;
+  line-height: $lh-main;
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+@mixin input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin columns {
+  display: flex;
+  justify-content: space-between;
+}

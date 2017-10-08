@@ -25,27 +25,6 @@
   font-style: normal;
 }
 
-@mixin container {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 280px;
-}
-
-@mixin prime-text {
-  color: $color-second;
-  font-size: $fz-main;
-  line-height: $lh-main;
-  font-family: $font-main;
-  font-weight: 400;
-}
-
-@mixin input {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 

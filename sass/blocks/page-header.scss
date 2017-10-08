@@ -1,8 +1,15 @@
 .page-header {
-  background-color: rgba(0, 0, 0, 0.3);
   background-color: $color-second;
 }
 
 .page-header__wrapper {
   @include container;
+
+  @media (min-width: $desctop-width) {
+    @include columns;
+
+    position: fixed;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

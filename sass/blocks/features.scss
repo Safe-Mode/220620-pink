@@ -89,7 +89,6 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
     font-size: 18px;
   }
 }
@@ -100,24 +99,6 @@
   @media (min-width: $desktop-width) {
     @include columns;
 
-    margin-bottom: 35px;
+    margin-bottom: 65px;
   }
-}
-
-.features__research {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 95px;
-    padding-left: 365px;
-    padding-bottom: 45px;
-  }
-}
-
-.features__link {
-  color: $color-prime;
-  font-size: 18px;
-  line-height: $lh-main;
 }

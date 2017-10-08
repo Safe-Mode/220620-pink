@@ -1,0 +1,54 @@
+.research {
+  @include prime-text;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 95px;
+    padding-left: 310px;
+    padding-bottom: 80px;
+
+    font-size: $fz-main;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 365px;
+    padding-bottom: 115px;
+
+    font-size: 18px;
+    line-height: $lh-main;
+
+    background-color: $color-bg-even;
+  }
+}
+
+.research__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.research__link {
+  color: $color-prime;
+}

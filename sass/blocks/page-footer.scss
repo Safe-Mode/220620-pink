@@ -6,16 +6,48 @@
   line-height: 18px;
   font-family: $font-main;
   font-weight: 400;
+
+  &--index {
+    @include mobile-hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
 }
 
 .page-footer__wrapper {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include columns;
+
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 150px;
+  }
 }
 
 .page-footer__social {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 200px;
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__copyright {
+  width: 150px;
 }

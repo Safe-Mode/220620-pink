@@ -11,6 +11,10 @@
     padding-bottom: 70px;
 
     font-size: 18px;
+
+    &:nth-of-type(2) {
+      padding: 65px 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

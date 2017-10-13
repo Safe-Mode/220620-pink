@@ -33,9 +33,9 @@
         </div>
       </section>
 
-      <div class="intro">
+      <div class="intro intro--form">
         <div class="intro__wrapper">
-          <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+          <p class="intro__text intro__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
       </div>
 
@@ -58,27 +58,27 @@
           <fieldset class="form__section form__section--achievements">
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__section-wrapper">
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="shark">Сделал селфи с акулой</label>
                 <input type="checkbox" id="shark" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="beach">Обгорел на пляже</label>
                 <input type="checkbox" id="beach" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="chack-norris">Видел Чака Норриса</label>
                 <input type="checkbox" id="chack-norris">
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="gifts">Накупил сувениров</label>
                 <input type="checkbox" id="gifts">
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="tower">Удержал башню</label>
                 <input type="checkbox" id="tower" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="hotel">Разгромил отель</label>
                 <input type="checkbox" id="hotel">
               </p>
@@ -86,26 +86,28 @@
           </fieldset>
           <fieldset class="form__section form__section--contacts">
             <legend class="form__title form__title--contacts">Контактная информация</legend>
-            <p class="form__field form__field--contacts">
-              <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
-              <input class="form__input form__input--contacts" type="tel" id="phone">
-            </p>
-            <p class="form__field form__field--contacts">
-              <label class="form__label form__label--contacts" for="email">Введите почту</label>
-              <input class="form__input form__input--contacts" type="email" id="email">
-            </p>
+            <div class="form__columns">
+              <p class="form__field form__field--contacts">
+                <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
+                <input class="form__input form__input--contacts" type="tel" id="phone">
+              </p>
+              <p class="form__field form__field--contacts">
+                <label class="form__label form__label--contacts" for="email">Введите почту</label>
+                <input class="form__input form__input--contacts" type="email" id="email">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__section form__section--app">
             <legend class="form__title">С каким приложением путешествовали?</legend>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="ios">Pink для iOS</label>
               <input type="radio" id="ios" checked>
             </p>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="android">Pink на Android</label>
               <input type="radio" id="android">
             </p>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="windows">Windows Phone</label>
               <input type="radio" id="windows">
             </p>
@@ -121,7 +123,7 @@
               <button class="btn btn--submit" type="submit">Отправить форму</button>
             </p>
             <small class="form__legend">
-              <sup class="form__index form__index--sup">*</sup> — обязательные поля
+              <sup class="form__index form__index--sup">*</sup> — обязательные <span class="form__index--desktop-visible">для заполнения</span> поля
             </small>
           </div>
         </div>

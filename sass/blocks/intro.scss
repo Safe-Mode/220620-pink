@@ -20,6 +20,12 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 85px;
   }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 65px;
+    }
+  }
 }
 
 .intro__wrapper {
@@ -32,5 +38,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 495px;
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      max-width: 800px;
+    }
   }
 }

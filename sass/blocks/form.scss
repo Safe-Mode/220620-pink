@@ -57,6 +57,7 @@
     @media (min-width: $tablet-width) {
       order: 3;
       padding-top: 0;
+      padding-bottom: 25px;
     }
   }
 
@@ -119,11 +120,9 @@
     padding-right: 25px;
   }
 
-  &--mobile-hidden {
-    @include mobile-hidden;
-  }
-
   &--contacts {
+    @include mobile-hidden;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
     }
@@ -270,5 +269,6 @@
     @include columns;
 
     order: 6;
+    align-items: baseline;
   }
 }

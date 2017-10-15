@@ -5,6 +5,27 @@
   padding-bottom: 55px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 70px;
+
+    font-size: 18px;
+
+    &:nth-of-type(2) {
+      padding: 65px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 65px;
+    }
+  }
 }
 
 .intro__wrapper {
@@ -12,5 +33,16 @@
 }
 
 .intro__text {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 245px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 495px;
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      max-width: 800px;
+    }
+  }
 }

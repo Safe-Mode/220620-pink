@@ -1,5 +1,5 @@
 .features {
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 320px;
 
   text-align: center;
@@ -10,10 +10,44 @@
   font-weight: 400;
 
   background: $color-bg-even url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom -40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 40px;
+
+    text-align: left;
+
+    background-position: left 20px bottom -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 65px;
+
+    background: $color-bg-even;
+  }
 }
 
 .features__wrapper {
   @include container;
+
+  @media (min-width: $tablet-width) {
+    @include columns;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.features__column {
+  @media (min-width: $tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .features__item {
@@ -21,6 +55,15 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 0 30px;
+    padding-top: 355px;
+    width: 240px;
+
+    text-align: center;
   }
 }
 
@@ -33,15 +76,29 @@
   line-height: 24px;
   font-family: $font-main;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .features__text {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .features__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
-  list-style: none;
+  @media (min-width: $desktop-width) {
+    @include columns;
+
+    margin-bottom: 65px;
+  }
 }

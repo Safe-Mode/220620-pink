@@ -4,6 +4,10 @@
   margin-bottom: 20px;
 
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .panorama__wrapper {
@@ -20,6 +24,18 @@
   padding-bottom: 20px;
 
   background-color: $color-bg-even;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .panorama__author {
@@ -42,5 +58,18 @@
 
 .panorama__like {
   color: $color-prime;
+  font-size: 12px;
+  line-height: inherit;
+  font-family: inherit;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+  }
 }

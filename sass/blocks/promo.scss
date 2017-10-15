@@ -2,7 +2,7 @@
   @include container;
 
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 
   text-align: center;
   color: $color-second;
@@ -12,13 +12,41 @@
   line-height: $lh-main;
 
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 45px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .promo__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 340px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 420px;
+    }
   }
 }

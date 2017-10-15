@@ -8,8 +8,11 @@
 }
 
 .slider__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
-  list-style: none;
+  display: flex;
+}
+
+.slider__item {
+  min-width: 100%;
 }

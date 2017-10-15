@@ -11,14 +11,16 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">Pink</a>
+        <a class="page-header__logo" href="index.html">
+          <img src="http://via.placeholder.com/147x40" alt="Pink logo">
+        </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photos.html">Фотографии</a></li>
             <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -31,15 +33,15 @@
         </div>
       </section>
 
-      <div class="intro">
+      <div class="intro intro--form">
         <div class="intro__wrapper">
-          <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+          <p class="intro__text intro__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
       </div>
 
       <form class="form" action="https://echo.htmlacademy.ru">
         <div class="form__wrapper">
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--name">
             <p class="form__field">
               <label class="form__label" for="sirname">Фамилия</label>
               <input class="form__input" type="text" id="sirname" placeholder="Укажите фамилию*">
@@ -53,72 +55,77 @@
               <input class="form__input" type="text" id="sec-name" placeholder="Ну, и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="form__section form__section--even">
+          <fieldset class="form__section form__section--achievements">
             <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="form__section-wrapper">
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="shark">Сделал селфи с акулой</label>
                 <input type="checkbox" id="shark" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="beach">Обгорел на пляже</label>
                 <input type="checkbox" id="beach" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="chack-norris">Видел Чака Норриса</label>
                 <input type="checkbox" id="chack-norris">
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="gifts">Накупил сувениров</label>
                 <input type="checkbox" id="gifts">
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="tower">Удержал башню</label>
                 <input type="checkbox" id="tower" checked>
               </p>
-              <p class="form__check">
+              <p class="form__check form__check--box">
                 <label class="form__checkbox-indicator" for="hotel">Разгромил отель</label>
                 <input type="checkbox" id="hotel">
               </p>
             </div>
           </fieldset>
-          <fieldset class="form__section form__section--no-legend">
-            <p class="form__field">
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input" type="tel" id="phone">
-            </p>
-            <p class="form__field">
-              <label class="form__label" for="email">Введите почту</label>
-              <input class="form__input" type="email" id="email">
-            </p>
+          <fieldset class="form__section form__section--contacts">
+            <legend class="form__title form__title--contacts">Контактная информация</legend>
+            <div class="form__columns">
+              <p class="form__field form__field--contacts">
+                <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
+                <input class="form__input form__input--contacts" type="tel" id="phone">
+              </p>
+              <p class="form__field form__field--contacts">
+                <label class="form__label form__label--contacts" for="email">Введите почту</label>
+                <input class="form__input form__input--contacts" type="email" id="email">
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form__section form__section--even">
+          <fieldset class="form__section form__section--app">
             <legend class="form__title">С каким приложением путешествовали?</legend>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="ios">Pink для iOS</label>
               <input type="radio" id="ios" checked>
             </p>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="android">Pink на Android</label>
               <input type="radio" id="android">
             </p>
-            <p class="form__check">
+            <p class="form__check form__check--app">
               <label class="form__radio-indicator" for="windows">Windows Phone</label>
               <input type="radio" id="windows">
             </p>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--emodzi">
             <legend class="form__title">Опишите свои эмоции</legend>
             <p class="form__field">
               <textarea class="form__text" name="emoji" cols="25" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <p class="form__button">
-            <button class="btn btn--submit" type="submit">Отправить форму</button>
-          </p>
-          <small class="form__legend">
-            <sup class="form__index form__index--sup">*</sup> — обязательные поля
-          </small>
+          <div class="form__columns">
+            <p class="form__button">
+              <button class="btn btn--submit" type="submit">Отправить форму</button>
+            </p>
+            <small class="form__legend">
+              <sup class="form__index form__index--sup">*</sup> — обязательные <span class="form__index--desktop-visible">для заполнения</span> поля
+            </small>
+          </div>
         </div>
       </form>
     </main>

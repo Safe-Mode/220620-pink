@@ -3,15 +3,47 @@
   padding-bottom: 40px;
 
   background-color: $color-bg-even;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
 }
 
 .user-post__wrapper {
   @include container;
 }
 
+.user-post__form {
+  @media (min-width: $tablet-width) {
+    @include columns;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+}
+
 .user-post__image {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 300px;
+  }
+}
+
+.user-post__column {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .user-post__edit {
@@ -19,23 +51,20 @@
   margin-bottom: 40px;
   border-bottom: 1px solid transparent;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    right: -20px;
-
-    height: 1px;
-
-    background-color: $color-second;
-    opacity: 0.1;
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
   }
 }
 
 .user-post__filters {
   margin: 0;
   margin-bottom: 40px;
+}
+
+.user-post__controls {
+  @media (min-width: $desktop-width) {
+    @include columns;
+  }
 }
 
 .user-post__submit {
@@ -47,6 +76,14 @@
   font-family: $font-main;
   font-weight: 700;
   color: $color-prime;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+  }
 }
 
 .user-post__submit-btn {
@@ -67,6 +104,10 @@
   color: $color-second;
 
   opacity: 0.1;
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+  }
 }
 
 .user-post__reset-btn {

@@ -1,9 +1,15 @@
 .page-header {
+  padding-top: 20px;
+
   background-color: $color-second;
+  border-bottom: 1px solid transparent;
 
   @media (min-width: $desktop-width) {
-    position: fixed;
     width: 100%;
+  }
+
+  &--fixed {
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -16,4 +22,9 @@
 
     align-items: baseline;
   }
+}
+
+.page-header__logo {
+  display: block;
+  margin-bottom: 25px;
 }

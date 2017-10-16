@@ -1,11 +1,12 @@
 .page-header {
   padding-top: 20px;
+  width: 100%;
 
   background-color: $color-second;
   border-bottom: 1px solid transparent;
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    padding-top: 0;
   }
 
   &--fixed {
@@ -15,7 +16,7 @@
 }
 
 .page-header__wrapper {
-  @include container;
+  @include container-fluid;
 
   @media (min-width: $desktop-width) {
     @include columns;

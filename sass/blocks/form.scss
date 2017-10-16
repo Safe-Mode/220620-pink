@@ -293,6 +293,17 @@
 
   border: 2px solid $color-field-border;
 
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-second;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-prime;
+  }
+
   &--contacts {
     @media (min-width: $tablet-width) {
       order: 1;

@@ -20,5 +20,20 @@
     width: 100%;
 
     background-color: #2aab6d;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #1c9b5e;
+      outline: none;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: $color-field-border;
+    }
   }
 }

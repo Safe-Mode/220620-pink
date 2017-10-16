@@ -92,6 +92,17 @@
 
   border: 3px solid $color-prime;
   border-radius: 28px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    background-color: $color-prime;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .user-post__reset {
@@ -102,8 +113,6 @@
   font-family: $font-main;
   font-weight: 700;
   color: $color-second;
-
-  opacity: 0.1;
 
   @media (min-width: $desktop-width) {
     width: 185px;
@@ -116,4 +125,16 @@
 
   border: 3px solid $color-second;
   border-radius: 28px;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: $color-second;
+  }
 }

@@ -257,6 +257,61 @@
   }
 }
 
+.form__indicator {
+  position: relative;
+  padding-left: 70px;
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    border-color: $color-second;
+  }
+
+  &:active::before {
+    border-color: $color-prime;
+  }
+
+  &--checkbox::before,
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto 0;
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid $color-field-border;
+    background-color: #ffffff;
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+}
+
+input:checked ~ .form__indicator--checkbox::before {
+  content: "\2713"; /*временно, пока не соберу спрайт*/
+  text-align: center;
+}
+
+input:checked ~ .form__indicator--radio::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+
+  margin: auto 0;
+  width: 15px;
+  height: 15px;
+
+  background-color: $color-prime;
+  border-radius: 50%;
+}
+
 .form__label {
   display: block;
   padding-left: 20px;

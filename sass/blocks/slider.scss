@@ -4,7 +4,32 @@
 
 .slider__toggles {
   position: absolute;
-  margin: 0;
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+
+  font-size: 0;
+}
+
+.slider__toggle {
+  margin-right: 15px;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: #bec2c7;
+
+  &--active {
+    background-color: #ffffff;
+    border-color: $color-second;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .slider__list {

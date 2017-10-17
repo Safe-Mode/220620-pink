@@ -150,14 +150,38 @@
             </p>
             <div class="user-post__column">
               <div class="user-post__edit">
-                <p class="user-post__filters">
-                  <a class="button" href="#">Обрезать</a>
-                  <a class="button" href="#">Заливка</a>
-                  <a class="button" href="#">Контраст</a>
-                </p>
-                <p class="user-post__input">
-                  <input class="user-post__input-range" type="range" min="0" max="100" value="90">
-                </p>
+                <div class="user-post__filters">
+                  <div class="user-post__filter user-post__filter--cut user-post__filter--active">
+                    <a class="user-post__filter-btn" href="#">
+                      <img src="http://via.placeholder.com/44x44" alt="Обрезать">
+                      <span class="visually-hidden">Обрезать</span>
+                    </a>
+                    <div class="user-post__input-range user-post__input-range--cut">
+                      <div class="user-post__input-scale"></div>
+                      <div class="user-post__input-toggle"></div>
+                    </div>
+                  </div>
+                  <div class="user-post__filter user-post__filter--fill">
+                    <a class="user-post__filter-btn" href="#">
+                      <img src="http://via.placeholder.com/48x43" alt="Обрезать">
+                      <span class="visually-hidden">Заливка</span>
+                    </a>
+                    <div class="user-post__input-range user-post__input-range--fill">
+                      <div class="user-post__input-scale"></div>
+                      <div class="user-post__input-toggle"></div>
+                    </div>
+                  </div>
+                  <div class="user-post__filter user-post__filter--contrast">
+                    <a class="user-post__filter-btn" href="#">
+                      <img src="http://via.placeholder.com/32x32" alt="Обрезать">
+                      <span class="visually-hidden">Контраст</span>
+                    </a>
+                    <div class="user-post__input-range user-post__input-range--contrast">
+                      <div class="user-post__input-scale"></div>
+                      <div class="user-post__input-toggle"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="user-post__controls">
                 <p class="user-post__submit">
@@ -176,7 +200,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
-          <img src="http://via.placeholder.com/75x22" alt="">
+          <img src="http://via.placeholder.com/147x40" alt="">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">

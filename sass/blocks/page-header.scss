@@ -11,6 +11,8 @@
 
   &--fixed {
     position: fixed;
+    z-index: 2;
+
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

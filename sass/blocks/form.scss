@@ -292,9 +292,19 @@
   }
 }
 
-input:checked ~ .form__indicator--checkbox::before {
-  content: "\2713"; /*временно, пока не соберу спрайт*/
-  text-align: center;
+input:checked ~ .form__indicator--checkbox::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+
+  width: 23px;
+  height: 11px;
+
+  border-bottom: 2px solid $color-prime;
+  border-left: 2px solid $color-prime;
+
+  transform: rotate(-45deg);
 }
 
 input:checked ~ .form__indicator--radio::after {

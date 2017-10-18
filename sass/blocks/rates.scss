@@ -1,4 +1,6 @@
 .rates {
+  position: relative;
+
   padding-top: 90px;
   padding-bottom: 100px;
 
@@ -124,5 +126,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+  }
+}
+
+.rates__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

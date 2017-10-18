@@ -12,12 +12,12 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img src="http://via.placeholder.com/147x40" alt="Pink logo">
+          <img src="http://via.placeholder.com/75x22" alt="Pink logo">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" >Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photos.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
@@ -109,9 +109,9 @@
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--active btn" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle btn" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle btn" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -175,9 +175,9 @@
             </table>
           </div>
           <p class="rates__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle btn" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--active btn" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle btn" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -206,18 +206,18 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo">
-          <img src="http://via.placeholder.com/147x40" alt="Pink Logo">
+          <img src="http://via.placeholder.com/75x22" alt="Pink Logo">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в twitter</a>
+              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в twitter</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в facebook</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в facebook</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru">Мы на youtube</a>
+              <a class="social__link social__link--instagram" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на youtube</span></a>
             </li>
           </ul>
         </div>
@@ -226,6 +226,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

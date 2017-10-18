@@ -1,6 +1,30 @@
 .social__list {
-  margin: 0;
+  @include columns;
+
   padding: 0;
 
   list-style: none;
+}
+
+.social__item {
+  display: flex;
+}
+
+.social__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+
+  border: 3px solid transparentize($color-second, 0.9);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-second;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }

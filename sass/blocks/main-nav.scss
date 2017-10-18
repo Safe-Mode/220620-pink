@@ -1,10 +1,98 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     width: 620px;
   }
 }
 
-.main-nav__list {
+.main-nav__toggle {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  z-index: 2;
+
+  padding: 0;
+  width: 24px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: auto;
+    width: 30px;
+    height: 5px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:active::before,
+  &:active::after {
+    background-color: $color-prime;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__toggle {
+    width: 50px;
+    height: 24px;
+
+    &::before {
+      top: 0;
+
+      margin: 0;
+      width: 50px;
+      height: 4px;
+
+      box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+      transform: rotate(0);
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &:hover::before,
+    &:active::before {
+      background-color: $color-prime;
+      box-shadow: 0 10px 0 0 $color-prime, 0 20px 0 0 $color-prime;
+    }
+  }
+
+  .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav .main-nav__list {
   @include list-reset;
 
   @media (min-width: $desktop-width) {
@@ -43,10 +131,45 @@
     line-height: 18px;
     text-transform: none;
   }
-}
 
-.main-nav__toggle {
-  @media (min-width: $desktop-width) {
-    display: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-prime;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+  }
+
+  &--current {
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
+
+    &::after {
+      @media (min-width: $desktop-width) {
+        content: "";
+        position: absolute;
+        bottom: 35px;
+        left: 15px;
+        right: 15px;
+
+        height: 2px;
+
+        background-color: #ffffff;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff;
+      opacity: 1;
+    }
   }
 }

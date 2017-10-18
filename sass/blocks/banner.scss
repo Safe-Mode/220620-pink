@@ -106,6 +106,17 @@
 
   border: 3px solid #ffffff;
   border-radius: 30px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-prime;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: transparentize($color-prime, 0.7);
+  }
 }
 
 .banner__vendors {

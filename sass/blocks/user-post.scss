@@ -38,18 +38,41 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    padding-left: 25px;
+    padding-right: 20px;
+    width: 255px;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .user-post__edit {
   position: relative;
+
   margin-bottom: 40px;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+
+    height: 1px;
+    background-color: $color-field-border;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: auto;
@@ -59,6 +82,127 @@
 .user-post__filters {
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 45px;
+
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.user-post__filter {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  &--cut {
+    margin-right: 35px;
+    width: 44px;
+    height: 44px;
+  }
+
+  &--fill {
+    margin-right: 40px;
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -20px;
+      left: 0;
+
+      height: 1px;
+      background-color: #b5b9be;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      height: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include columns;
+
+    align-items: center;
+    width: 100%;
+    height: 73px;
+  }
+}
+
+.user-post__input-range {
+  @include mobile-hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+}
+
+.user-post__filter--active .user-post__input-range {
+  @media (max-width: $mobile-only-width) {
+    position: absolute;
+    top: 84px;
+    left: -20px;
+
+    display: block;
+    width: 240px;
+  }
+}
+
+.user-post__input-scale {
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-second;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 30px;
+
+    width: 290px;
+  }
+}
+
+.user-post__input-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 193px;
+
+  margin: auto 0;
+  width: 10px;
+  height: 10px;
+
+  border: 2px solid $color-prime;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .user-post__controls {
@@ -82,6 +226,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     width: 185px;
   }
 }
@@ -92,6 +237,17 @@
 
   border: 3px solid $color-prime;
   border-radius: 28px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+    background-color: $color-prime;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .user-post__reset {
@@ -102,8 +258,6 @@
   font-family: $font-main;
   font-weight: 700;
   color: $color-second;
-
-  opacity: 0.1;
 
   @media (min-width: $desktop-width) {
     width: 185px;
@@ -116,4 +270,16 @@
 
   border: 3px solid $color-second;
   border-radius: 28px;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: $color-second;
+  }
 }

@@ -1,19 +1,23 @@
 .page-header {
+  position: relative;
+  z-index: 2;
+
   padding-top: 20px;
   width: 100%;
 
   background-color: $color-second;
-  border-bottom: 1px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
 
-  &--fixed {
-    position: fixed;
-    z-index: 2;
-
+  &--closed {
     background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid transparent;
   }
 }
 
@@ -30,4 +34,8 @@
 .page-header__logo {
   display: block;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }

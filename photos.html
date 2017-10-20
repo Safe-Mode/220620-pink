@@ -11,8 +11,12 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="http://via.placeholder.com/75x22" alt="Pink logo">
+        <a class="page-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 980px)" srcset="http://via.placeholder.com/147x40">
+            <source media="(min-width: 660px)" srcset="http://via.placeholder.com/147x40">
+            <img src="http://via.placeholder.com/75x22" alt="Pink logo">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,7 +45,11 @@
 
       <article class="panorama">
         <p class="panorama__image">
-          <img src="img/panorama-mobile@1x.jpg" alt="Мост для прыжка">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__image-src" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="Мост для прыжка">
+          </picture>
         </p>
         <div class="panorama__wrapper">
           <div class="panorama__desc">
@@ -60,7 +68,11 @@
           <div class="posts__list">
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-car-mobile@1x.jpg" alt="Робот">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x" alt="Робот">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Левон <time class="posts__time" datetime="2017-09-23 17:00">(5 часов назад)</time></cite>
@@ -72,7 +84,11 @@
             </blockquote>
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Антон <time class="posts__time" datetime="2017-09-23 17:00">(12 часов назад)</time></cite>
@@ -84,7 +100,11 @@
             </blockquote>
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-window-mobile@1x.jpg" alt="Вид на небо через стеклянный потолок">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x" alt="Вид на небо через стеклянный потолок">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Борис <time class="posts__time" datetime="2017-09-23 17:00">(20 часов назад)</time></cite>
@@ -96,7 +116,11 @@
             </blockquote>
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка Кубанская бахча">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка Кубанская бахча">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Сергей <time class="posts__time" datetime="2017-09-23 17:00">(25 часов назад)</time></cite>
@@ -108,7 +132,11 @@
             </blockquote>
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="Свесил ноги с обрыва">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x" alt="Свесил ноги с обрыва">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Максим <time class="posts__time" datetime="2017-09-23 17:00">(40 часов назад)</time></cite>
@@ -120,7 +148,11 @@
             </blockquote>
             <blockquote class="posts__item">
               <p class="posts__image">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="Вид на крыло самолёта из его окна">
+                <picture>
+                  <source media="(min-width: 980px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" alt="Вид на крыло самолёта из его окна">
+                </picture>
               </p>
               <div class="posts__desc">
                 <cite class="posts__author">Надежда <time class="posts__time" datetime="2017-09-23 17:00">(45 часов назад)</time></cite>
@@ -141,12 +173,16 @@
         </div>
       </div>
 
-      <section class="user-post">
-        <div class="user-post__wrapper">
+      <div class="user-post__wrapper">
+        <section class="user-post">
           <h2 class="visually-hidden">Опубликовать фото</h2>
           <form class="user-post__form" action="https://echo.htmlacademy.ru">
             <p class="user-post__image">
-              <img src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+              </picture>
             </p>
             <div class="user-post__column">
               <div class="user-post__edit">
@@ -193,15 +229,15 @@
               </div>
             </div>
           </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">
-          <img src="http://via.placeholder.com/147x40" alt="">
-        </div>
+        <a class="page-footer__logo logo" href="index.html">
+          <img src="http://via.placeholder.com/147x40" alt="Pink logo">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

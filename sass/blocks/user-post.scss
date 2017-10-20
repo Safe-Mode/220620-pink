@@ -1,4 +1,6 @@
 .user-post {
+  position: relative;
+
   padding-top: 20px;
   padding-bottom: 40px;
 
@@ -6,6 +8,23 @@
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+
+    background-color: $color-bg-even;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      right: 0;
+    }
   }
 }
 

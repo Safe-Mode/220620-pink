@@ -9,11 +9,25 @@
   font-family: $font-main;
   font-weight: 400;
 
-  background: $color-bg-even url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom -40px;
+  background-color: $color-bg-even;
+  background-image:
+    url("../img/bg-triangle-white.svg"),
+    url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position:
+    top,
+    center bottom -40px;
+  background-size:
+    100% 30px,
+    auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
-    background-size: 157px auto;
+    background-image:
+      url("../img/bg-triangle-white.svg"),
+      url("../img/iphone-screen-mobile@2x.png");
+    background-size:
+      100% 30px,
+      157px auto;
   }
 
   @media (min-width: $tablet-width) {

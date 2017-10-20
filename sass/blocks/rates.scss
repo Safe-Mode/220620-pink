@@ -67,14 +67,13 @@
 }
 
 .rates__option {
+  position: relative;
+
   padding: 15px 20px;
+  padding-right: 70px;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-
-  &:first-child {
-    @include mobile-hidden;
-  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 15px;
@@ -83,6 +82,64 @@
 
   @media (min-width: $desktop-width) {
     padding: 15px 25px;
+  }
+
+  &:first-child {
+    @include mobile-hidden;
+  }
+
+  &--on {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: -10px;
+      bottom: 0;
+
+      margin: auto;
+      width: 30px;
+      height: 15px;
+
+      border-left: 3px solid $color-succes;
+      border-bottom: 3px solid $color-succes;
+
+      transform: rotate(-45deg);
+
+      @media (min-width: $tablet-width) {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &--off {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      right: 12px;
+      top: 0;
+      bottom: 0;
+
+      margin: auto;
+      width: 37px;
+      height: 3px;
+
+      background-color: $color-fail;
+
+      @media (min-width: $tablet-width) {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 

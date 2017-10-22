@@ -24,6 +24,8 @@
     padding-top: 180px;
     padding-bottom: 140px;
 
+    font-size: 18px;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -71,7 +73,7 @@
         url("../img/iphone-hand-tablet@1x.png"),
         url("../img/bg-back-tablet@1x.jpg");
       background-position:
-        right -20px top 176px,
+        right -20px bottom,
         center top;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -197,7 +199,8 @@
   padding: 30px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0;
+    padding: 30px 28px;
+    padding-top: 45px;
   }
 }
 

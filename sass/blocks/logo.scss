@@ -6,13 +6,13 @@
   display: none;
 
   &--mobile {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $tablet-width - 1) {
       display: block;
     }
   }
 
   &--tablet {
-    @media (max-width: $desktop-width - 1) and (min-width: $tablet-width + 1) {
+    @media (max-width: $desktop-width - 1) and (min-width: $tablet-width) {
       display: block;
     }
   }

@@ -14,7 +14,7 @@
   background-color: $color-bg-even;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: top -2px right;
+  background-position: top -2px 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;

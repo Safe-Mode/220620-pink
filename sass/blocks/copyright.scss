@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 15px;
+}
+
+.copyright__link {
+  display: flex;
+}
+
+.copyright__link svg {
+  fill: $color-prime;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg,
+.copyright__link:active svg {
+  fill: $color-second;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

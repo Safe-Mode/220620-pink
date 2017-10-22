@@ -67,3 +67,69 @@
 .slider__item {
   min-width: 100%;
 }
+
+.slider__control {
+  position: absolute;
+  top: 155px;
+
+  width: 22px;
+  height: 41px;
+
+  opacity: 0.3;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #bec2c7;
+  }
+
+  &--right::before {
+    top: 19px;
+    right: 0;
+
+    transform: rotate(45deg);
+  }
+
+  &--right::after {
+    right: 0;
+
+    transform: rotate(-45deg);
+  }
+
+  &--left::before {
+    top: 19px;
+    left: 0;
+
+    transform: rotate(-45deg);
+  }
+
+  &--left::after {
+    left: 0;
+
+    transform: rotate(45deg);
+  }
+}

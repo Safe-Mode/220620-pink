@@ -25,6 +25,25 @@
   }
 }
 
+.reviews__wrapper {
+  position: relative;
+}
+
+.reviews__icon {
+  @include desktop-visible;
+
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  width: 79px;
+  height: 63px;
+
+  fill: #efefef;
+
+  transform: translate(-50%);
+}
+
 .reviews__title {
   display: block;
   margin: 0;
@@ -60,6 +79,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     box-sizing: border-box;
     padding: 0 130px;
     padding-top: 135px;
@@ -88,4 +109,8 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
+}
+
+.reviews__controls {
+  @include desktop-visible;
 }

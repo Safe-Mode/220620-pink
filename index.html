@@ -230,7 +230,9 @@
             <p class="contacts__content">ул. Большая<br> Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map">
+
+        </div>
       </section>
     </main>
 
@@ -288,6 +290,20 @@
     </footer>
 
     <script src="js/script.min.js"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2EdrxpJad3-3XJTrtLzDHuLeyg_eUl8w&callback=initMap"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 59.93620, lng: 30.32110};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: "img/icon-map-marker.svg"
+        });
+      }
+    </script>
   </body>
 </html>

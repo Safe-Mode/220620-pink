@@ -180,6 +180,8 @@
   }
 
   &--contacts {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       flex-direction: column;
       align-items: flex-start;
@@ -190,6 +192,26 @@
       margin-bottom: 0;
       width: 375px;
     }
+  }
+
+  &--contacts svg {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+
+    fill: $color-prime;
+  }
+
+  ::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 2px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e5;
   }
 }
 
@@ -447,14 +469,19 @@ input:checked ~ .form__indicator--radio::after {
 
 .form__columns {
   @media (min-width: $tablet-width) {
-    @include columns;
-
     order: 6;
     align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
+    @include columns;
     width: 100%;
+  }
+
+  &--submit {
+    @media (min-width: $tablet-width) {
+      @include columns;
+    }
   }
 }
 

@@ -12,7 +12,7 @@
   }
 
   &--tablet {
-    @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    @media (max-width: $desktop-width - 1) and (min-width: $tablet-width + 1) {
       display: block;
     }
   }

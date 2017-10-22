@@ -15,12 +15,16 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="index.html">
-          <picture>
-            <source media="(min-width: 980px)" srcset="http://via.placeholder.com/147x40">
-            <source media="(min-width: 660px)" srcset="http://via.placeholder.com/147x40">
-            <img src="http://via.placeholder.com/75x22" alt="Pink logo">
-          </picture>
+        <a class="page-header__logo logo">
+          <svg class="logo__image logo__image--mobile" width="75" height="22">
+            <use xlink:href="#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo__image logo__image--tablet" width="147" height="40">
+            <use xlink:href="#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo__image logo__image--desktop" width="147" height="40">
+            <use xlink:href="#logo-pink-white-desktop"></use>
+          </svg>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -193,7 +197,9 @@
                 <div class="user-post__filters">
                   <div class="user-post__filter user-post__filter--cut user-post__filter--active">
                     <a class="user-post__filter-btn" href="#">
-                      <img src="http://via.placeholder.com/44x44" alt="Обрезать">
+                      <svg class="user-post__filter-icon user-post__filter-icon--cut" width="44" height="44">
+                        <use xlink:href="#icon-editor-crop"></use>
+                      </svg>
                       <span class="visually-hidden">Обрезать</span>
                     </a>
                     <div class="user-post__input-range user-post__input-range--cut">
@@ -203,7 +209,9 @@
                   </div>
                   <div class="user-post__filter user-post__filter--fill">
                     <a class="user-post__filter-btn" href="#">
-                      <img src="http://via.placeholder.com/48x43" alt="Обрезать">
+                      <svg class="user-post__filter-icon user-post__filter-icon--fill" width="48" height="43">
+                        <use xlink:href="#icon-editor-fill"></use>
+                      </svg>
                       <span class="visually-hidden">Заливка</span>
                     </a>
                     <div class="user-post__input-range user-post__input-range--fill">
@@ -213,7 +221,9 @@
                   </div>
                   <div class="user-post__filter user-post__filter--contrast">
                     <a class="user-post__filter-btn" href="#">
-                      <img src="http://via.placeholder.com/32x32" alt="Обрезать">
+                      <svg class="user-post__filter-icon user-post__filter-icon--contrast" width="32" height="32">
+                        <use xlink:href="#icon-editor-contrast"></use>
+                      </svg>
                       <span class="visually-hidden">Контраст</span>
                     </a>
                     <div class="user-post__input-range user-post__input-range--contrast">
@@ -264,7 +274,13 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          Разработано <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -1,0 +1,47 @@
+.popup {
+  padding: 0 20px;
+  padding-top: 40px;
+  width: 280px;
+
+  font-size: $fz-main;
+  line-height: 24px;
+  font-family: $font-main;
+  font-weight: 400;
+  color: $color-second;
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+
+  &--failure {
+    padding-bottom: 50px;
+  }
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.popup__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.popup__close {
+  margin: 0;
+
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  &--success {
+    margin: 0 -20px;
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+  }
+}

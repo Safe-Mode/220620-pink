@@ -15,6 +15,9 @@
   width: 45px;
   height: 45px;
 
+  text-align: center;
+  line-height: 40px;
+
   border: 3px solid transparentize($color-second, 0.9);
   border-radius: 50%;
 
@@ -27,4 +30,9 @@
   &:active {
     opacity: 0.1;
   }
+}
+
+.social__link svg {
+  vertical-align: middle;
+  fill: $color-prime;
 }

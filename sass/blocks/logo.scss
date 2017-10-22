@@ -1,3 +1,25 @@
 .logo {
   display: block;
 }
+
+.logo__image {
+  display: none;
+
+  &--mobile {
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}

@@ -73,6 +73,11 @@
     padding-bottom: 8px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
   &--hit::before {
     content: "Хит";
     position: absolute;
@@ -116,6 +121,12 @@
 
   &:first-child {
     @include mobile-hidden;
+  }
+
+  &:not(:first-child) {
+    @media (min-width: $desktop-width) {
+      padding: 15px 38px;
+    }
   }
 
   &--on {

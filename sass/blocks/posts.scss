@@ -92,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     @include columns;
+
     align-items: center;
   }
 }
@@ -101,4 +102,8 @@
   margin-right: 20px;
   vertical-align: middle;
   fill: $color-prime;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }

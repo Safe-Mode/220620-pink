@@ -75,6 +75,8 @@
       background-position:
         right -20px bottom,
         center top;
+        background-size:
+          auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
@@ -96,8 +98,6 @@
       background-position:
         right bottom,
         center top;
-      background-size:
-        auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
@@ -202,6 +202,10 @@
   padding: 15px 13px;
 
   @media (min-width: $tablet-width) {
+    padding: 30px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 51px 45px;
   }
 }

@@ -15,8 +15,10 @@
     url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position:
-    top -2px right,
+    top center,
     center bottom -40px;
+  background-size:
+    auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
@@ -29,7 +31,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 75px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
 
     text-align: left;
 
@@ -37,8 +39,8 @@
       url("../img/iphone-screen-3-tablet@1x.png"),
       url("../img/bg-triangle-white.svg");
     background-position:
-      left 20px top,
-      top -2px right;
+      left 20px bottom,
+      top right;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
@@ -54,9 +56,13 @@
     padding-top: 0;
     padding-bottom: 65px;
 
+    line-height: 30px;
+    font-size: 18px;
+
     background: $color-bg-even;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -89,10 +95,14 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding: 0 30px;
-    padding-top: 355px;
+    padding-top: 358px;
     width: 240px;
 
     text-align: center;
@@ -131,7 +141,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 
   color: #000000;
   font-size: 18px;
@@ -140,7 +150,7 @@
   font-weight: 700;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     font-size: 30px;
     line-height: 30px;
@@ -149,10 +159,6 @@
 
 .features__text {
   margin: 0;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
 }
 
 .features__list {
@@ -160,7 +166,5 @@
 
   @media (min-width: $desktop-width) {
     @include columns;
-
-    margin-bottom: 65px;
   }
 }

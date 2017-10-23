@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
 
-  padding-top: 20px;
+  padding-top: 22px;
   width: 100%;
 
   background-color: $color-second;
@@ -36,5 +36,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
   }
 }

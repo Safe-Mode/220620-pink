@@ -1,4 +1,12 @@
 .popup {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  display: none;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 40px;
   width: 280px;
@@ -13,8 +21,26 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    padding-top: 35px;
+    width: 320px;
+
+    font-size: 18px;
+  }
+
   &--failure {
     padding-bottom: 50px;
+  }
+
+  &--success {
+    padding: 0 160px;
+    padding-top: 40px;
+    width: 460px;
+  }
+
+  &--show {
+    display: block;
   }
 }
 
@@ -24,11 +50,25 @@
 
   font-size: 18px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding: 0 30px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .popup__text {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .popup__close {
@@ -36,6 +76,7 @@
 
   text-transform: uppercase;
   font-size: 18px;
+  line-height: 18px;
   font-weight: 700;
   color: #ffffff;
 
@@ -43,5 +84,15 @@
     margin: 0 -20px;
     padding: 50px 20px;
     background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 -70px;
+      padding: 50px 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 -160px;
+      padding: 50px 160px;
+    }
   }
 }

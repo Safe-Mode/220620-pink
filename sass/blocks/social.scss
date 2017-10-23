@@ -1,7 +1,8 @@
 .social__list {
   @include columns;
 
-  padding: 0;
+  margin: 0;
+  padding: 0 11px;
 
   list-style: none;
 }

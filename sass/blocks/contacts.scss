@@ -45,12 +45,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 }
 
 .contacts__item {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   &:first-child {
     @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 300px;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {

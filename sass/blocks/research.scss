@@ -28,11 +28,13 @@
 
 .research__decor {
   @media (min-width: $tablet-width) {
+    padding-top: 12px;
     width: 310px;
   }
 
   @media (min-width: $desktop-width) {
     align-self: flex-start;
+    padding-top: 0;
     width: 370px;
   }
 }
@@ -88,7 +90,7 @@
 
 .research__text {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
@@ -118,7 +120,7 @@
     color: $color-prime;
     text-align: center;
 
-    border: 15px solid $color-prime;
+    border: 13px solid $color-prime;
     border-radius: 50%;
   }
 
@@ -126,11 +128,13 @@
     top: 70px;
     left: 22px;
 
-    padding-top: 15px;
+    padding-top: 11px;
     width: 253px;
     height: 253px;
 
     font-size: 120px;
     line-height: 186px;
+
+    border-width: 15px;
   }
 }

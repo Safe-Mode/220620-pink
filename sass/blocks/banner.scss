@@ -46,7 +46,7 @@
   }
 
   &--index {
-    padding-top: 480px;
+    padding-top: 495px;
     padding-bottom: 30px;
 
     background-image:
@@ -94,9 +94,11 @@
         url("../img/iphone-hand-desktop@1x.png"),
         url("../img/bg-back-desktop@1x.jpg");
       background-position:
-        center top 176px,
+        right bottom,
         center top;
-      background-size: auto 100%;
+      background-size:
+        auto,
+        100%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
@@ -140,6 +142,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
     padding: 0 35px;
 
     font-size: 50px;
@@ -149,6 +152,7 @@
 
 .banner__download {
   margin: 0;
+  margin-bottom: 17px;
 
   text-align: center;
   font-family: $font-main;
@@ -194,13 +198,12 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 15px 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 28px;
-    padding-top: 45px;
+    padding: 51px 45px;
   }
 }
 

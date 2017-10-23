@@ -3,7 +3,7 @@
 
   position: relative;
 
-  padding-top: 45px;
+  padding-top: 42px;
   padding-bottom: 85px;
 
   text-align: center;
@@ -14,6 +14,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    padding-top: 43px;
     padding-bottom: 65px;
 
     font-size: 18px;
@@ -21,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
 }
 
@@ -29,7 +30,7 @@
   @include desktop-visible;
 
   position: absolute;
-  top: 20px;
+  top: 27px;
   left: 50%;
 
   width: 79px;
@@ -78,8 +79,8 @@
     position: relative;
 
     box-sizing: border-box;
-    padding: 0 130px;
-    padding-top: 135px;
+    padding: 0 125px;
+    padding-top: 139px;
   }
 }
 
@@ -109,4 +110,8 @@
 
 .reviews__controls {
   @include desktop-visible;
+}
+
+.reviews__toggles {
+  bottom: 9px;
 }

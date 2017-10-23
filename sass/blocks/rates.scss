@@ -1,7 +1,7 @@
 .rates {
   position: relative;
 
-  padding-top: 90px;
+  padding-top: 93px;
   padding-bottom: 100px;
 
   color: $color-second;
@@ -14,9 +14,11 @@
   background-color: $color-bg-even;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: top -2px 0;
+  background-position: top;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
+    padding-top: 87px;
     padding-bottom: 70px;
     text-transform: none;
   }
@@ -67,7 +69,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 8px;
   }
 
   &--hit::before {
@@ -76,6 +79,8 @@
     top: 10px;
     left: -25px;
 
+    font-weight: 600;
+
     height: 0;
     width: 40px;
     border-bottom: 30px solid $color-prime;
@@ -83,20 +88,25 @@
     border-right: 30px solid transparent;
 
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      width: 30px;
+    }
   }
 }
 
 .rates__option {
   position: relative;
 
-  padding: 15px 20px;
+  padding: 14px 20px;
   padding-right: 70px;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 15px;
+    padding: 7px 15px;
     min-width: 120px;
   }
 
@@ -175,6 +185,7 @@
   text-transform: inherit;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     font-size: 16px;
   }
 

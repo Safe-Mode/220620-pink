@@ -192,26 +192,28 @@
       margin-bottom: 0;
       width: 375px;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 1px;
+      top: 2px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: #e5e5e5;
+    }
   }
 
   &--contacts svg {
     position: absolute;
+    z-index: 2;
     right: 20px;
     top: 25px;
 
     fill: $color-prime;
-  }
-
-  ::after {
-    content: "";
-    position: absolute;
-    right: 1px;
-    top: 2px;
-
-    width: 60px;
-    height: 60px;
-
-    background-color: #e5e5e5;
   }
 }
 

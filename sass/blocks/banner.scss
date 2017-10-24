@@ -75,8 +75,8 @@
       background-position:
         right -20px bottom,
         center top;
-        background-size:
-          auto;
+      background-size:
+        auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
@@ -96,7 +96,7 @@
         url("../img/iphone-hand-desktop@1x.png"),
         url("../img/bg-back-desktop@1x.jpg");
       background-position:
-        right bottom,
+        right -108px bottom,
         center top;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -206,7 +206,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 51px 45px;
+    align-items: flex-end;
+    padding: 51px 46px;
   }
 }
 

@@ -59,6 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-self: flex-end;
     font-size: 18px;
   }
 }

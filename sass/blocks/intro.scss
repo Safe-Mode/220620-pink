@@ -22,8 +22,10 @@
   }
 
   &--form {
-    @media (min-width: $desktop-width) {
-      padding-bottom: 65px;
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 71px;
     }
   }
 
@@ -48,7 +50,7 @@
 
 .intro__text {
   margin: 0 auto;
-  max-width: 245px;
+  max-width: 255px;
 
   @media (min-width: $tablet-width) {
     max-width: 495px;
@@ -59,8 +61,22 @@
   }
 
   &--form {
+    max-width: 275px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 495px;
+    }
+
     @media (min-width: $desktop-width) {
       max-width: 800px;
     }
+  }
+}
+
+.intro__text-call {
+  @include mobile-hidden;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

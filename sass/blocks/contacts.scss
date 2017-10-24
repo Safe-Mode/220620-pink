@@ -41,13 +41,13 @@
 .contacts__list {
   @include list-reset;
 
-  margin-bottom: 32px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {

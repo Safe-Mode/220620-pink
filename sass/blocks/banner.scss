@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -110px;
-    padding-top: 175px;
+    padding-top: 180px;
     padding-bottom: 140px;
 
     font-size: 18px;
@@ -35,8 +35,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 175px;
     padding-bottom: 100px;
+
     font-size: 18px;
+
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -107,6 +110,20 @@
           1050px auto,
           2560px auto;
       }
+    }
+  }
+
+  &--form {
+    padding-bottom: 51px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 180px;
+      padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 175px;
+      padding-bottom: 100px;
     }
   }
 }

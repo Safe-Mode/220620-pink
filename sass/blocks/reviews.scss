@@ -114,4 +114,8 @@
 
 .reviews__toggles {
   bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 9px;
+  }
 }

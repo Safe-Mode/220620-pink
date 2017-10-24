@@ -11,22 +11,23 @@
 
   background-color: $color-bg-even;
   background-image:
-    url("../img/bg-triangle-white.svg"),
-    url("../img/iphone-screen-mobile@1x.png");
+    url("../img/iphone-screen-mobile@1x.png"),
+    url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position:
-    top center,
-    center bottom -40px;
+    center bottom -40px,
+    top center;
   background-size:
-    auto;
+    auto,
+    100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
-      url("../img/bg-triangle-white.svg"),
-      url("../img/iphone-screen-mobile@2x.png");
+      url("../img/iphone-screen-mobile@2x.png"),
+      url("../img/bg-triangle-white.svg");
     background-size:
-      auto,
-      157px auto;
+      157px auto,
+      auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -166,5 +167,11 @@
 
   @media (min-width: $desktop-width) {
     @include columns;
+  }
+}
+
+.features__line {
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
   }
 }

@@ -9,9 +9,10 @@
   bottom: 30px;
 
   margin: 0 auto;
-  width: 60px;
+  width: 80px;
 
   font-size: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     bottom: 30px;
@@ -26,7 +27,7 @@
   position: relative;
 
   box-sizing: content-box;
-  margin-right: 15px;
+  margin-right: 20px;
   padding: 0;
   width: 6px;
   height: 6px;

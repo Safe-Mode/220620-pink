@@ -1,6 +1,4 @@
 .contacts {
-  @include container;
-
   padding-top: 45px;
 
   text-align: center;
@@ -13,6 +11,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 65px;
   }
+}
+
+.contacts__wrapper {
+  @include container;
 }
 
 .contacts__text {
@@ -39,18 +41,18 @@
 .contacts__list {
   @include list-reset;
 
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 }
 
@@ -101,6 +103,12 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 24px;
   }
+
+  &--location {
+    @media (min-width: $desktop-width) {
+      width: 280px;
+    }
+  }
 }
 
 .contacts__content {
@@ -109,6 +117,12 @@
   color: $color-prime;
   font-size: 24px;
   font-weight: 300;
+
+  &--location {
+    @media (min-width: $desktop-width) {
+      width: 280px;
+    }
+  }
 }
 
 .contacts__link {
@@ -123,7 +137,7 @@
 .contacts__map {
   position: relative;
 
-  margin: 0 -20px;
+  width: 100%;
   height: 200px;
 
   background: $color-bg-even url("../img/bg-map-mobile@1x.png") no-repeat;
@@ -145,7 +159,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 500px;
+    height: 521px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
 
@@ -167,14 +181,15 @@
 
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: top;
 
     @media (min-width: $tablet-width) {
       height: 70px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 105px;
+      height: 126px;
+      background-size: 1439px;
     }
   }
 }

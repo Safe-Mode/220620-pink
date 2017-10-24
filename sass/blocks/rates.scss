@@ -98,6 +98,15 @@
       top: 5px;
       width: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 11px;
+
+      width: 42px;
+
+      font-size: 14px;
+      text-align: center;
+    }
   }
 }
 
@@ -229,6 +238,8 @@
 }
 
 .rates__toggles {
+  bottom: 36px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

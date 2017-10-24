@@ -1,14 +1,14 @@
 .intro {
   @include prime-text;
 
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 46px;
+  padding-bottom: 49px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 95px;
-    padding-bottom: 70px;
+    padding-top: 92px;
+    padding-bottom: 76px;
 
     font-size: 18px;
 
@@ -18,12 +18,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    padding-bottom: 88px;
   }
 
   &--form {
+    padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 71px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    padding: 43px 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 62px;
+      padding-bottom: 71px;
+    }
+
     @media (min-width: $desktop-width) {
-      padding-bottom: 65px;
+      padding-top: 56px;
+      padding-bottom: 68px;
     }
   }
 }
@@ -34,15 +50,33 @@
 
 .intro__text {
   margin: 0 auto;
-  max-width: 245px;
+  max-width: 255px;
 
   @media (min-width: $tablet-width) {
     max-width: 495px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 640px;
+  }
+
   &--form {
+    max-width: 275px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 495px;
+    }
+
     @media (min-width: $desktop-width) {
       max-width: 800px;
     }
+  }
+}
+
+.intro__text-call {
+  @include mobile-hidden;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

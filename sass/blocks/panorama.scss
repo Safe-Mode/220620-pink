@@ -6,6 +6,10 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
 }
@@ -54,11 +58,19 @@
 
 .panorama__image-src {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 509px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 506px;
+  }
 }
 
 .panorama__desc {
   padding: 0 20px;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 20px;
 
   background-color: $color-bg-even;
@@ -66,13 +78,14 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    padding-left: 25px;
+    padding-left: 27px;
     padding-right: 30px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 12px;
   }
 }
 
@@ -103,8 +116,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 15px;
+    top: 24px;
     right: 30px;
+
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,8 +128,14 @@
   }
 }
 
-.panorama__like svg {
-  margin-right: 20px;
+.panorama__like-icon {
+  margin-right: 14px;
   vertical-align: middle;
   fill: $color-prime;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-right: 0;
+    margin-left: 15px;
+  }
 }

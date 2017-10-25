@@ -34,7 +34,9 @@ gulp.task("style", function() {
 gulp.task("script", function() {
   gulp.src("js/script.js")
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
+    .pipe(rename(
+      {suffix: '.min'}
+    ))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
@@ -102,5 +104,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "script", "html", "webp", done);
+  run("clean", "copy", "style", "sprite", "script", "webp", "html", done);
 });

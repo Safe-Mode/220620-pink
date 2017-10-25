@@ -37,6 +37,20 @@
     margin-top: -5px;
     width: 150px;
   }
+
+  .logo__image {
+    fill: $color-second;
+  }
+
+  &:hover .logo__image,
+  &:focus .logo__image {
+    fill: $color-prime;
+  }
+
+  &:active .logo__image {
+    fill: $color-second;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social {

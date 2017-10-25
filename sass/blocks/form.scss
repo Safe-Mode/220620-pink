@@ -533,7 +533,7 @@ input:checked ~ .form__indicator--radio::after {
   }
 }
 
-.form__section-wrapper{
+.form__section-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;

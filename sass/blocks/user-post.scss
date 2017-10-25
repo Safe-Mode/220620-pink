@@ -316,6 +316,7 @@
   @media (min-width: $tablet-width) {
     margin-right: -5px;
   }
+
   @media (min-width: $desktop-width) {
     @include columns;
   }

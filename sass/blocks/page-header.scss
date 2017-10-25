@@ -41,4 +41,18 @@
   @media (min-width: $desktop-width) {
     align-self: flex-end;
   }
+
+  .logo__image {
+    fill: #ffffff;
+  }
+
+  &:hover .logo__image,
+  &:focus .logo__image {
+    fill: $color-prime;
+  }
+
+  &:active .logo__image {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }

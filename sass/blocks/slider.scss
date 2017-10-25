@@ -33,10 +33,22 @@
   height: 6px;
 
   border-radius: 50%;
-  background-color: #bec2c7;
+  background-color: $color-second;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &--active {
     background-color: #ffffff;
+    opacity: 1;
 
     &::before {
       content: "";
@@ -105,7 +117,7 @@
     width: 30px;
     height: 2px;
 
-    background-color: #bec2c7;
+    background-color: $color-second;
   }
 
   &--right::before {

@@ -284,6 +284,13 @@
     left: 160px;
   }
 
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-prime;
+    cursor: pointer;
+  }
+
   &--fill {
     @media (min-width: $tablet-width) {
       left: 75px;

@@ -132,6 +132,18 @@
   font-family: inherit;
   font-weight: inherit;
   text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-second;
+    border-bottom: 1px solid $color-second;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: none;
+  }
 }
 
 .contacts__map {

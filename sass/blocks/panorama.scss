@@ -53,6 +53,10 @@
     @media (min-width: $tablet-width) {
       top: 55px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 130px;
+    }
   }
 }
 
